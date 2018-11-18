@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"
+>
+<hibernate-configuration>
+	<session-factory>
+		<!-- 
+		#hibernate.dialect org.hibernate.dialect.MySQLDialect
+		#hibernate.dialect org.hibernate.dialect.MySQLInnoDBDialect
+		#hibernate.dialect org.hibernate.dialect.MySQLMyISAMDialect
+		#hibernate.connection.driver_class com.mysql.jdbc.Driver
+		#hibernate.connection.url jdbc:mysql:///test
+		#hibernate.connection.username gavin
+		#hibernate.connection.password
+		
+		username=root
+		password=000
+		driver=com.mysql.jdbc.Driver
+		url=jdbc:mysql://localhost:3306/bl
+		 -->
+		 <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		 <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bl</property>
+		 <property name="hibernate.connection.username">root</property>
+		 <property name="hibernate.connection.password">000</property>
+		 <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		 <!-- 
+		 	#hibernate.show_sql true
+			hibernate.format_sql true
+		  -->
+		  <property name="hibernate.show_sql">true</property>
+		  <property name="hibernate.format_sql">true</property>
+		  
+		  <!-- 
+		 	 ## auto schema export
+			#hibernate.hbm2ddl.auto create-drop
+			#hibernate.hbm2ddl.auto create
+			#hibernate.hbm2ddl.auto update
+			#hibernate.hbm2ddl.auto validate
+		   -->
+		  <property name="hibernate.hbm2ddl.auto">update</property>
+		  
+		  <mapping resource="cn/bl/bean/Car.hbm.xml"/>
+		  <mapping resource="cn/bl/bean/Guitar.hbm.xml"/>
+		  <mapping resource="cn/bl/bean/User.hbm.xml"/>
+		  
+	</session-factory>
+</hibernate-configuration>

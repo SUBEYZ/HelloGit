@@ -1,0 +1,34 @@
+笔记：
+
+使用UTF8编码，collate使用utf8_bin时区分大小写，collate使用utf8_general_ci时不区分大小写
+
+严重: The required Server component failed to start so Tomcat is unable to start.
+org.apache.catalina.LifecycleException: A child container failed during start
+这是因为servlet-mapping,写错了。例如写少了/，或者有冲突【项目不能正常发布到tomcat..】
+
+container 类和container-fluid类的区别体现在是否有随视口宽度改变的margin存在。 
+container类所谓的自适应也是通过margin的改变来完成，
+container-fluid类的百分百宽度是指在固有的15px的padding前提下宽度总是当前视口的宽度。
+
+
+
+在一个jsp引入另外一个jsp的时候 使用<jsp:include page=
+"${pageContext.request.contextPath}/xxx.jsp"></jsp:include>,报错
+File &quot;/LIGHT/xxx.jsp&quot; not found，
+原因是<jsp:include page="">,这个标签里面不能出现 ${pageContext.request.contextPath}, 
+因为在引入js css 的时候，通过${pageContext.request.contextPath}获得工程的名字，
+浏览器再次发送请求从服务器端获取数据，而 <jsp:include page="">的时候是服务器内部整合后发给浏览器，
+所以格式应该是 <jsp:include page="xxx.jsp">就O了
+
+request.getRequestDispatcher()是请求转发，前后页面共享一个request
+response.sendRedirect()是重新定向，前后页面不是一个request
+
+一个未解之谜：index.js生成的href怎么突然就不行了呢，就连以前的都是生成看不懂的东西，
+将EL表达式去掉就OK了。为什么呢？？？？？
+
+servlet方法抽取：按照模块分servlet
+写一个总的servlet：baseServlet,里面写一个servlet()，使用类反射技术
+
+
+
+

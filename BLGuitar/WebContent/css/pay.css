@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 表格左边距 */
+table{
+	margin-left:27%;
+}
+
+/* 三个编辑框样式 */
+.input{
+	width: 350px;
+    height: 35px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    font-size: 16px;
+}
+
+/* 填写收货人信息、选择银行字体样式 */
+#msg ,#bank{
+	font-size: 32px;
+	padding-left: 20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* 银行图片及按钮 */
+#bankRP{
+	text-align:center;
+}
+
+#sum{
+	font-size: 35px;
+	color: red;
+}
+#textsum{
+	margin-top:20px;
+	margin-left:20%;
+}

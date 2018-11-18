@@ -1,0 +1,28 @@
+@charset "UTF-8";
+	
+.img{
+	width: 110px;
+	height: 110px;
+} 
+/* td{
+	vertical-align: middle;
+	line-height:110px;
+} */
+#sum{
+	font-size: 35px;
+	color: red;
+}
+#btn:hover{
+	cursor: pointer;
+}
+#btn,#textsum{
+	text-align:center;
+	margin:0 auto;
+}
+#remove:hover{
+	cursor: pointer;
+}
+td{
+	align:center;
+	padding-top:80px;
+}

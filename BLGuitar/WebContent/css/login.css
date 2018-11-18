@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.container{
+	float: left;
+	margin-left: 49%;
+	margin-top: 9%;
+}
+font {
+	color: #272727;
+	font-weight: normal;
+	padding: 0 10px;
+}
+.item {
+	align-items: 20px;
+}
+body{  
+    overflow: hidden;//隐藏滚动条  
+} 
+#background {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+    background-size:cover;
+}
+#usernameSpan,#passwordSpan,#codeSpan{
+	color: red;
+	size:18px;
+	align-self: 30px;
+	width: 350px;
+    height: 25px;
+}
+#username{
+	background: url("../imgs/user_icon.gif")no-repeat 305px ;
+    width: 350px;
+    height: 35px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+#password{
+	background: url("../imgs/pwd_icon.gif")no-repeat 305px ;
+    width: 350px;
+    height: 35px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#loginText{
+	font-size:22px;
+	font-style: italic;
+	color:#6C7B8B
+}
+#submit{
+	margin-left: 17%;
+}
+
+#registerNow{
+	font-size: 13px;
+	margin-left: 27%;
+	text-decoration: none;
+}
+#findpwd{
+	font-size: 13px;
+	padding-left: 28px;
+	text-decoration: none;
+}
+#submit:hover {/* 伪元素选择器 ， 鼠标移动到图片上面的时候显示为手 */
+	cursor: pointer;
+}
+#logo{
+	float:right;
+}
+#codeimg:hover{
+	cursor:pointer;
+}
+#codeimg{/* 居中显示验证码文本框和验证码图片 */
+	vertical-align: middle;
+}
+#code{
+	background: no-repeat;/* 背景色为透明 */
+	width: 150px;
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}

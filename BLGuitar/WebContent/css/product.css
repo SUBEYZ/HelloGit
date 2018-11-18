@@ -1,0 +1,20 @@
+@charset "UTF-8";
+#add:hover {/* 伪元素选择器 ， 鼠标移动到图片上面的时候显示为手 */
+	cursor: pointer;
+}
+#price{
+	 color:red;
+}
+#couPrice{
+	color:red;
+	font-size: 16px;
+}
+.black{
+	margin-bottom:50px;
+}
+#pdetail{
+	font-size: 32px;
+	padding-left: 46%;
+	padding-top: 18px;
+	padding-bottom: 15px;
+}
